@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab10 - Ruby & Python </title>
+</head>
+<body>
+
+<h3>Please fill the below form:</h3>
+
+<form name='f' action="../cgi-bin/lab10p.cgi">
+  <label for="city">City:</label><br>
+  <input type="text" id="city" name="city" value="Toronto"><br><br>
+  <label for="pro">Province/State:</label><br>
+  <input type="text" id="pro" name="pro" value="Ontario"><br><br>
+  <label for="country">Country:</label><br>
+  <input type="text" id="country" name="country" value="Canada"><br><br>
+  <label for="url">Picture URL:</label><br>
+  <input type="text" id="url" name="url" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbutFXTm6jXukfuFHOlYdjyiSxl0yEMsLhDg&usqp=CAU"><br>
+  <br><br>
+  
+  <input type="submit" value="Submit to Ruby" onclick="f.action = '../cgi-bin/lab10r.cgi' ; return true ;">
+  <input type="submit" value="Submit to Python" onclick="f.action = '../cgi-bin/lab10p.cgi' ; return true ;">
+</form> 
+
+
+</body>
+</html>
